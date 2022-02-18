@@ -1,4 +1,5 @@
-public class Empregado{
+public class Empregado {
+
     private String nome;
     private int idade;
     private int tipo;
@@ -6,16 +7,16 @@ public class Empregado{
     private double comissao;
     private double bonus;
 
-    public double calcularSalario () {
-        if (tipo == 1){
+    public double calcularSalario() {
+        if (tipo == 1)
             return salario;
-        }
-        else if (tipo == 2){
+
+        if (tipo == 2)
             return salario + salario * comissao;
-        }
-        else if (tipo == 3){
+
+        if (tipo == 3)
             return salario + bonus;
-        }
+
         return 0;
     }
 
@@ -42,4 +43,29 @@ public class Empregado{
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
+
+    public double getSalario() {
+        return this.salario;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public double getComissao() {
+        return this.comissao;
+    }
+
+    public void setComissao(double comissao) {
+        this.comissao = comissao;
+    }
+
+    public double getBonus() {
+        return this.bonus;
+    }
+
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
+    }
+
 }
